@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles/main.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="learn">
+      <h1 class="learn__title">Learn to code by<br>watching others</h1>
+      <p class="learn__info">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable.</p>
+    </div>
+
+    <div class="signup">
+      <div class="try">
+        <div class="try__days"><p><span>Try it free 7 days </span>then $20/mo. thereafter</p></div>
+      </div>
+      
+      <form action="/" class="try__form" id="form">
+        <div class="form-control">
+          <input type="text" name="fname" id="fname" placeholder="First Name">
+          <img src="./images/icon-error.svg" alt="" class="try__form--pop" aria-hidden="true">
+          <div class="try__form--error" aria-hidden="true"></div>
+        </div>
+        <div class="form-control">
+          <input type="text" name="lname" id="lname" placeholder="Last Name">
+          <img src="./images/icon-error.svg" alt="" class="try__form--pop" aria-hidden="true">
+          <div class="try__form--error" aria-hidden="true"></div>
+        </div>
+        <div class="form-control">
+          <input type="text" name="email" id="email" placeholder="Email Address" autocomplete="off">
+          <img src="./images/icon-error.svg" alt="" class="try__form--pop" aria-hidden="true">
+          <div class="try__form--error" aria-hidden="true"></div>
+        </div>
+        <div class="form-control">
+          <input type="password" name="pass" id="pass" placeholder="Password">
+          <img src="./images/icon-error.svg" alt="" class="try__form--pop" aria-hidden="true">
+          <div class="try__form--error" aria-hidden="true"></div>
+        </div>
+        <button id="btn" type="submit">CLAIM  YOUR FREE TRIAL</button>
+        <p class="try__service">By clicking the button, you are agreeing to our <span><a href="#">Terms and Services.</a></span></p>
+      </form>
+    </div>
+  </main>
+  
+  
+  <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+
+  <script src="./app.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+// LEARN TO CODE STYLE
+main {
+  padding: 5em 0;
+  display: grid;
+  max-width: 1440px;
+}
+
+.learn {
+  padding: 0 1em;
+  margin-bottom: 3.5em;
+
+  &__title {
+    font-size: 1.5rem;
+  }
+
+  &__info {
+    font-size: 0.9rem;
+  }
+}
+
+.try {
+  margin: 0 1em 2em;
+  background-color: $blue;
+  padding: 0.5em 9em;
+  border-radius: 1em;
+  box-shadow: 1px 8px 5px hsla(249, 10%, 26%, 0.5);
+
+  &__days {
+    font-size: 0.8rem;
+    color: $grayish-blue;
+
+    span {
+      color: white;
+      font-weight: 700;
+    }
+  }
+
+  &__form {
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em 1.5em;
+    margin: 0 1em;
+    background-color: white;
+    border-radius: 1em;
+    box-shadow: 1px 8px 5px hsla(249, 10%, 26%, 0.5);
+
+    & .form-control {
+      position: relative;
+      margin: 0 1em;
+      position: relative;
+      color: $red;
+      text-align: right;
+    }
+
+    & img {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      display: none;
+    }
+
+    &--error {
+      position: absolute;
+      right: 0;
+      top: 45px;
+      margin: 0;
+      font-style: italic;
+    }
+
+    & input {
+      border: 1px solid hsla(246, 25%, 77%, 0.5);
+      border-radius: 0.25em;
+      padding: 1em;
+      width: 100%;
+      font-weight: 700;
+      color: $dark-blue;
+      margin-bottom: 1.5em;
+    }
+
+    & input:focus {
+      outline: 2px solid $grayish-blue;
+    }
+
+    & input::placeholder {
+      font-weight: 700;
+    }
+
+    & button {
+      margin: 0 1em;
+      font-size: 1rem;
+      background-color: $green;
+      padding: 0.85em;
+      border-radius: 0.25em;
+      color: white;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color 150ms ease-in-out;
+
+      &:hover {
+        background-color: hsl(154, 60%, 42%);
+      }
+    }
+  }
+
+  &__service {
+    color: $grayish-blue;
+    margin: 1em;
+
+    & span a {
+      color: $red;
+      font-weight: 700;
+    }
+  }
+}
+
+.form-control.active .try__form--error {
+  display: block;
+}
+
+.form-control.active input {
+  border: 1px solid $red;
+  border-radius: 0.25em;
+}
+
+
+.form-control.active input:focus {
+  outline: none;
+}
+
+.form-control.active img {
+  display: block;
+}

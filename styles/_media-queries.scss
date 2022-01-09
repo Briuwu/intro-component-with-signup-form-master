@@ -1,0 +1,40 @@
+// breakpoints
+$br: 700px;
+
+
+// QUERIES
+@media only screen and (min-width: $br){
+  body {
+    background-image: url(../images/bg-intro-desktop.png);
+    overflow: hidden;
+  }
+
+  main {
+    padding: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+  }
+
+  .learn {
+    justify-self: flex-end;
+    text-align: left;
+    margin: 0;
+    max-width: 80%;
+
+    &__title {
+      font-size: 2.5rem;
+      line-height: 1;
+      margin: 0;
+    }
+
+    &__info {
+      font-size: 1rem;
+    }
+  }
+
+  .signup {
+    justify-self: flex-start;
+    margin-left: 2em;
+  }
+}
