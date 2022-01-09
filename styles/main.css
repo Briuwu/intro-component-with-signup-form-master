@@ -4,8 +4,6 @@
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0;
-  border: 0;
 }
 
 body {
@@ -13,6 +11,8 @@ body {
   display: -ms-grid;
   display: grid;
   place-items: center;
+  padding: 0;
+  margin: 0;
   font-size: 62.50%;
   font-family: "Poppins", sans-serif;
   color: white;
@@ -184,7 +184,6 @@ main {
 @media only screen and (min-width: 700px) {
   body {
     background-image: url(../images/bg-intro-desktop.png);
-    overflow: hidden;
   }
   main {
     padding: 0;
